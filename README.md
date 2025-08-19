@@ -1,9 +1,4 @@
 # DWH-PROJECTS-ITI
-Of course. Here is a professionally crafted README.md designed to attract recruiters and showcase your skills. It's structured to be comprehensive, visually appealing, and keyword-rich for both human readers and automated tracking systems.
-
-Copy and paste the content below into a `README.md` file in your `DWH-PROJECTS-ITI` repository.
-
----
 
 # Enterprise Data Warehouse Portfolio 🚀
 
