@@ -26,7 +26,8 @@ This portfolio champions the **Modern Data Stack**, leveraging best-of-breed, cl
 
 ### The Medallion Architecture In Practice
 
-<img width="474" height="264" alt="image" src="https://github.com/user-attachments/assets/20c2ed84-534c-4808-bb3c-30a0ebee0159" />
+<img width="1011" height="564" alt="layers" src="https://github.com/user-attachments/assets/fa4d3b1c-e563-471a-8d45-1ea507ec475e" />
+
 
 *   **🟤 Bronze Layer:** The landing zone. Raw data is ingested in its original format, ensuring immutability and historical traceability. *(Tools: Azure Data Factory, ADLS Gen2)*
 *   **⚪ Silver Layer:** The single source of truth. Raw data is cleansed, standardized, deduplicated, and integrated into a structured, query-ready format (often a Data Vault or 3NF model). *(Tools: dbt, Snowflake)*
