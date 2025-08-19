@@ -21,62 +21,12 @@ A curated collection of end-to-end Data Warehouse projects built with modern clo
 This portfolio champions the **Modern Data Stack**, leveraging best-of-breed, cloud-native tools for scalability, reliability, and maintainability. The core design pattern across all projects is the **Medallion Architecture**, ensuring incremental data quality and governance.
 
 ### End-to-End Pipeline Architecture
-```mermaid
-flowchart TD
-    /* Data Sources */
-    A[SQL Server<br>OLTP Database] -->|Azure Data Factory| B
-    C[Azure Blob Storage<br>CSV/JSON Files] -->|Azure Data Factory| B
-    D[Simulated SaaS API] -->|Azure Data Factory| B
 
-    subgraph "Modern Data Stack Pipeline"
-        B[("Azure Data Lake Gen2<br>Bronze Layer Raw Data")]
-        B --> E[Apache Airflow<br>Orchestrator]
-        E --> F["dbt Cloud<br>Transformation Layer"]
-        B -.->|Reads| F
-
-        subgraph "Snowflake Data Platform"
-            G[("BRONZE<br>Raw/Staging")]
-            H[("SILVER<br>Cleaned & Integrated")]
-            I[("GOLD<br>Business Marts & KPIs")]
-        end
-
-        F -->|Models & Tests| G
-        F -->|Models & Tests| H
-        F -->|Models & Tests| I
-    end
-
-    I --> J["Power BI<br>Dashboards"]
-    I --> K[Ad-hoc Analysis]
-    I --> L[Data Science]
-
-    E --> M["Data Lineage &<br>Quality Monitoring"]
-```
+<img width="1536" height="1024" alt="End-to-End Data Pipeline Diagram" src="https://github.com/user-attachments/assets/3719b0bc-0ff2-4f19-afe3-dc76086a0e34" />
 
 ### The Medallion Architecture In Practice
 
-```mermaid
-flowchart LR
-    S[Source Systems] -->|ELT| Bronze
-
-    subgraph "Medallion Data Layers"
-        Bronze[("🟤 BRONZE<br>Raw & Immutable")]
-        Bronze --> T1["Type Casting<br>Basic Cleansing"]
-        T1 --> Silver[("⚪ SILVER<br>Cleaned & Conformed"])
-        Silver --> T2["Business Logic<br>Aggregations<br>Dimensional Modeling"]
-        T2 --> Gold[("🟡 GOLD<br>Business-ready Marts"])
-    end
-
-    Gold --> C[Consumption]
-
-    classDef bronze fill:#8C5A19,color:white;
-    classDef silver fill:#B4B4B4,color:black;
-    classDef gold fill:#FFD700,color:black;
-    classDef consumption fill:#4CAF50,color:white;
-
-    class Bronze bronze;
-    class Silver silver;
-    class Gold gold;
-```
+<img width="474" height="264" alt="image" src="https://github.com/user-attachments/assets/20c2ed84-534c-4808-bb3c-30a0ebee0159" />
 
 *   **🟤 Bronze Layer:** The landing zone. Raw data is ingested in its original format, ensuring immutability and historical traceability. *(Tools: Azure Data Factory, ADLS Gen2)*
 *   **⚪ Silver Layer:** The single source of truth. Raw data is cleansed, standardized, deduplicated, and integrated into a structured, query-ready format (often a Data Vault or 3NF model). *(Tools: dbt, Snowflake)*
@@ -103,12 +53,6 @@ flowchart LR
 *   **Transformations:** SCD Type 2 for customer attributes, revenue calculations, geographic enrichment.
 *   **Outcome:** A Power BI dashboard providing views into YTD revenue, sales by region, and customer cohorts.
 
-### Project 2: Telecom Customer Churn Prediction Pipeline
-**Objective:** Create a curated dataset for a machine learning model to predict customer churn.
-*   **Sources:** REST API (Customer Profiles), Parquet Files (Call Detail Records), SQL Server (Billing)
-*   **Key Models:** `fct_customer_interactions`, `dim_customer_status`, aggregated features like `avg_monthly_spend`.
-*   **Transformations:** Complex window functions for rolling aggregates, data quality tests to handle missing CDR records.
-*   **Outcome:** A clean, feature-rich Gold layer table served to Databricks for model training.
 
 ## 🎯 Key Competencies Demonstrated
 
@@ -121,6 +65,5 @@ flowchart LR
 
 ---
 
-**Author:** [Your Name] | Data Engineering Graduate, ITI ICC
-**LinkedIn:** [Your LinkedIn Profile URL]
-**Portfolio:** [Your Personal Portfolio URL]
+**Author:** MOHAMED MAHMOUD | Data Engineering Student, ITI ICC
+**LinkedIn:** www.linkedin.com/in/mohamedmahmoud7415369
