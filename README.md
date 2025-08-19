@@ -61,5 +61,6 @@ This portfolio champions the **Modern Data Stack**, leveraging best-of-breed, cl
 
 ---
 
-**Author:** MOHAMED MAHMOUD | Data Engineering Student, ITI ICC
+**Author:** MOHAMED MAHMOUD | Data Engineering Student, ITI ICC.
+
 **LinkedIn:** www.linkedin.com/in/mohamedmahmoud7415369
