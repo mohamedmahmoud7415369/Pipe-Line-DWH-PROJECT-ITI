@@ -79,25 +79,21 @@ text
 
 1. **Clone the Repository**
    
-bash
 git clone https://github.com/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI.git
 cd Pipe-Line-DWH-PROJECT-ITI/project1
 
 2. **Install Dependencies**
    
-bash
 pip install -r requirements.txt
 
 3. **Database Setup**
 
-bash
 # Create database and schema
 psql -U username -d postgres -f sql/ddl/create_database.sql
 psql -U username -d dwh_project -f sql/ddl/create_tables.sql
 
 4. **Run the Pipeline**
 
-bash
 python main_pipeline.py
 
 🔄 ETL Process Details
