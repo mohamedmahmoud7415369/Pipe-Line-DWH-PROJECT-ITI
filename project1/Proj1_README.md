@@ -216,12 +216,6 @@ ORDER BY year DESC, month DESC, monthly_revenue DESC;
 
 ## 🔄 Development Workflow
 
-### 🛠️ Adding New Features
-
-```
-Feature Idea → Create Branch → Develop Feature → Run Tests → Update Docs → Create PR → Code Review → Merge & Deploy
-```
-
 ### 🧪 Testing Strategy
 
 ```bash
