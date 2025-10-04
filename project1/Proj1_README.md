@@ -1,7 +1,5 @@
 # 🏗️ Data Warehouse Pipeline Project
 
-![DWH Pipeline](https://via.placeholder.com/1200x400/2E86AB/FFFFFF?text=Data+Warehouse+ETL+Pipeline+🚀)
-
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-brightgreen?logo=python&logoColor=white)](https://python.org)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-12%2B-blue?logo=postgresql&logoColor=white)](https://postgresql.org)
 [![Apache Airflow](https://img.shields.io/badge/Apache-Airflow-orange?logo=apacheairflow&logoColor=white)](https://airflow.apache.org)
@@ -34,7 +32,10 @@ This project implements a **production-ready Data Warehouse ETL Pipeline** that 
 | **Business Intelligence** | **Star Schema Models** | **Actionable Insights** |
 | **Data Quality** | **Automated Validation** | **Trusted Analytics** |
 
-## 🏗️ Architecture
+## 🏗️ System Architecture
+
+<img width="1683" height="1423" alt="deepseek_mermaid_20251004_ba9a14" src="https://github.com/user-attachments/assets/3a788ecf-7ed3-4788-8ce7-4c6274f7b6b9" />
+
 
 ### 🔄 End-to-End Data Flow
 
@@ -188,15 +189,7 @@ monitoring:
   alert_email: "admin@company.com"
 ```
 
-## 📈 Demo & Examples
-
-### 🎯 Live Dashboard Preview
-
-![Dashboard Preview](https://via.placeholder.com/800x400/2E86AB/FFFFFF?text=Live+Business+Intelligence+Dashboard)
-
-**Real-time Business Metrics**
-
-### 💡 Sample Use Cases
+### 📈 Analytics Preview
 
 **🛒 E-commerce Analytics**
 ```sql
@@ -263,49 +256,15 @@ pytest tests/performance_tests/ -v    # Performance tests
 python -m scripts.validation.data_quality_check --full-scan
 ```
 
-## 🤝 Contributing
-
-### 🎉 Join Our Community!
-
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Open Issues](https://img.shields.io/github/issues/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI)](../../issues)
-[![Good First Issues](https://img.shields.io/github/issues/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI/good%20first%20issue)](../../issues?q=is%3Aissue+is%3Aopen+label%3A"good+first+issue")
-
-We love contributions! Here's how you can help:
-
-### 🐛 Report Bugs
-1. Search existing issues
-2. Create new issue with detailed information
-
-### 🚀 Suggest Features
-1. Check feature requests
-2. Submit your idea with use cases
-
-### 💻 Code Contributions
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
 ## 📞 Contact & Support
 
-### 👨‍💻 Project Maintainer
-
 **Mohamed Mahmoud**  
-*Data Engineer & Project Lead*
+*Data Engineer*
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?logo=github)](https://github.com/mohamedmahmoud7415369)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://linkedin.com/in/yourprofile)
-[![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail)](mailto:your.email@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](www.linkedin.com/in/mohamedmahmoud7415369)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail)](mailto:your.mohamedmahmoud7415369@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-View-4CAF50?logo=google-chrome)](https://yourportfolio.com)
-
-### 🆘 Need Help?
-
-- **Documentation**: Check our detailed docs
-- **Bug Reports**: Create issue
-- **Discussions**: Join conversation  
-- **Email**: Direct support at your.email@example.com
 
 ## 🙏 Acknowledgments
 
@@ -313,9 +272,8 @@ We love contributions! Here's how you can help:
 
 [![ITI](https://via.placeholder.com/150x60/2E86AB/FFFFFF?text=ITI+Egypt)](https://iti.gov.eg)
 [![Data Engineering](https://via.placeholder.com/150x60/4ECDC4/FFFFFF?text=Data+Engineering)](https://)
-[![Open Source](https://via.placeholder.com/150x60/FF6B6B/FFFFFF?text=Open+Source)](https://)
 
-**Special thanks to mentors, instructors, and the open-source community!**
+**Special thanks to mentors, instructors**
 
 ---
 
@@ -328,22 +286,3 @@ If this project helped you, please give it a star!
 [![GitHub issues](https://img.shields.io/github/issues/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI?color=blue)](https://github.com/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI/issues)
 
 ### 🚀 Transform Your Data into Insights Today!
-
-**Built with ❤️ for the Data Community**
-
-*Last updated: March 2024 | Version: 2.0*
-
----
-
-## 🔗 Quick Links
-
-- [Full Documentation](docs/)
-- [Getting Started Guide](docs/GETTING_STARTED.md)
-- [Bug Tracker](../../issues)
-- [Feature Requests](../../issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
-- [Live Demo](https://demo-your-project.com)
-- [Video Tutorials](docs/TUTORIALS.md)
-
----
-
-**Copy this entire content and paste it into your README.md file!**
