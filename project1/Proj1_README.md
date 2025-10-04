@@ -11,17 +11,6 @@
 
 Transform raw data into actionable business insights with this production-ready Data Warehouse ETL Pipeline.
 
-## 📋 Table of Contents
-
-- [🚀 Quick Start](#-quick-start)
-- [🏗️ Architecture](#️-architecture)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [📊 Features](#-features)
-- [🔧 Installation](#-installation)
-- [📈 Demo](#-demo)
-- [🤝 Contributing](#-contributing)
-- [📞 Contact](#-contact)
-
 ## 🎯 Project Overview
 
 This project implements a **production-ready Data Warehouse ETL Pipeline** that transforms disparate raw data sources into structured, analyzable information. Built as part of the **ITI Data Engineering Program**, it showcases enterprise-level data processing capabilities.
