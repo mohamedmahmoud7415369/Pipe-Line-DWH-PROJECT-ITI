@@ -254,16 +254,14 @@ python -m scripts.validation.data_quality_check --full-scan
 *Data Engineer*
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?logo=github)](https://github.com/mohamedmahmoud7415369)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](www.linkedin.com/in/mohamedmahmoud7415369)
-[![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail)](mailto:your.mohamedmahmoud7415369@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-View-4CAF50?logo=google-chrome)](https://yourportfolio.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://www.linkedin.com/in/mohamedmahmoud7415369/)
 
 ## 🙏 Acknowledgments
 
 ### 🏆 Supported By
 
-[![ITI](https://via.placeholder.com/150x60/2E86AB/FFFFFF?text=ITI+Egypt)](https://iti.gov.eg)
-[![Data Engineering](https://via.placeholder.com/150x60/4ECDC4/FFFFFF?text=Data+Engineering)](https://)
+<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/0965f732-c06f-4c3e-bd33-0cf2cb70cebd" />
+
 
 **Special thanks to mentors, instructors**
 
