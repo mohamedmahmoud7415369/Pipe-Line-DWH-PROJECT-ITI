@@ -274,5 +274,3 @@ Open-source community contributors
 text
 
 This README provides a comprehensive overview of your Data Warehouse pipeline project with clear structure, technical details, and visual elements to make it professional and engaging!
-
-
