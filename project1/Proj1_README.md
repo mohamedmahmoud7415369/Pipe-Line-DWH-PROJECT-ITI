@@ -1,88 +1,87 @@
 🏗️ Data Warehouse Pipeline Project
-<div align="center">
-https://via.placeholder.com/1200x400/2E86AB/FFFFFF?text=Data+Warehouse+ETL+Pipeline+%F0%9F%9A%80
+https://via.placeholder.com/1200x400/2E86AB/FFFFFF?text=Data+Warehouse+ETL+Pipeline
 
 https://img.shields.io/badge/Python-3.8%252B-3776AB?logo=python&logoColor=white
 https://img.shields.io/badge/SQL-PostgreSQL-336791?logo=postgresql&logoColor=white
-https://img.shields.io/badge/ETL-Apache%2520Airflow-017CEE?logo=apacheairflow&logoColor=white
+https://img.shields.io/badge/ETL-Pipeline-FF6B6B?logo=apacheairflow&logoColor=white
 https://img.shields.io/badge/Data-Warehouse-4ECDC4?logo=amazonaws&logoColor=white
 https://img.shields.io/badge/License-MIT-green.svg
 
 End-to-End ETL Pipeline for Business Intelligence & Analytics
 
-</div>
 📊 Project Overview
 This project implements a complete Data Warehouse ETL Pipeline that transforms raw data into structured, analyzable information for business intelligence. Built as part of the ITI Data Engineering program, it demonstrates industry-standard practices in data warehousing and ETL processes.
 
-<div align="center">
-https://via.placeholder.com/800x300/4ECDC4/FFFFFF?text=Extract+%E2%86%92+Transform+%E2%86%92+Load+%E2%86%92+Analyze
-
-</div>
 🎯 Key Features
-Feature	Description	Status
-🔄 ETL Automation	Automated data extraction, transformation, and loading	✅ Complete
-🗄️ Star Schema	Optimized data models for analytics	✅ Complete
-📊 Data Quality	Comprehensive validation and quality checks	✅ Complete
-🚀 Scalable Design	Handles large datasets efficiently	✅ Complete
-📈 Business Insights	Ready-to-use analytical queries	✅ Complete
+🔄 ETL Automation - Automated data extraction, transformation, and loading
+
+🗄️ Star Schema - Optimized data models for analytics
+
+📊 Data Quality - Comprehensive validation and quality checks
+
+🚀 Scalable Design - Handles large datasets efficiently
+
+📈 Business Insights - Ready-to-use analytical queries
+
 🏗️ System Architecture
+text
+Raw Data Sources → Data Extraction → Data Transformation → Data Loading → Data Models → Analytics & BI
+Components:
 
+Data Extraction: Python Scripts, APIs, Database connections
 
+Data Transformation: Pandas, NumPy, Business logic
 
+Data Loading: PostgreSQL, Bulk operations
 
+Data Models: Star Schema, Fact & Dimension tables
 
-
-
-
-
-
+Analytics: Tableau, Power BI, SQL queries
 
 🛠️ Technology Stack
-<div align="center">
-Layer	Technology	Purpose
-🕷️ Extraction	https://img.shields.io/badge/Python-Requests-3776AB?logo=python	Data Collection
-🔄 Transformation	https://img.shields.io/badge/Pandas-DataFrames-150458?logo=pandas	Data Processing
-💾 Storage	https://img.shields.io/badge/PostgreSQL-Database-336791?logo=postgresql	Data Warehouse
-⚙️ Orchestration	https://img.shields.io/badge/Airflow-Workflow-017CEE?logo=apacheairflow	Pipeline Management
-📊 Visualization	https://img.shields.io/badge/Tableau-Visualization-E97627?logo=tableau	Business Intelligence
-</div>
+Component	Technology	Purpose
+Extraction	Python, Requests	Data Collection
+Transformation	Pandas, NumPy	Data Processing
+Storage	PostgreSQL	Data Warehouse
+Orchestration	Apache Airflow	Pipeline Management
+Visualization	Tableau, Power BI	Business Intelligence
 📁 Project Structure
 text
 Pipe-Line-DWH-PROJECT-ITI/
 │
-├── 📁 project1/
-│   ├── 📁 data/
-│   │   ├── 📁 raw/                 # 🗃️ Source data files
-│   │   ├── 📁 processed/           # 🔄 Cleaned data
-│   │   └── 📁 outputs/             # 📊 Final models
+├── project1/
+│   ├── data/
+│   │   ├── raw/                 # Source data files
+│   │   ├── processed/           # Cleaned data
+│   │   └── outputs/             # Final models
 │   │
-│   ├── 📁 scripts/
-│   │   ├── 📁 extraction/          # 🕷️ Data collection
-│   │   ├── 📁 transformation/      # 🔧 Data cleaning
-│   │   ├── 📁 loading/             # 💾 Database operations
-│   │   └── 📁 validation/          # ✅ Quality checks
+│   ├── scripts/
+│   │   ├── extraction/          # Data collection
+│   │   ├── transformation/      # Data cleaning
+│   │   ├── loading/             # Database operations
+│   │   └── validation/          # Quality checks
 │   │
-│   ├── 📁 sql/
-│   │   ├── 📁 ddl/                 # 🏗️ Schema definitions
-│   │   ├── 📁 dml/                 # 📝 Data manipulation
-│   │   └── 📁 queries/             # 📈 Analytical queries
+│   ├── sql/
+│   │   ├── ddl/                 # Schema definitions
+│   │   ├── dml/                 # Data manipulation
+│   │   └── queries/             # Analytical queries
 │   │
-│   ├── 📁 docs/                    # 📚 Documentation
-│   ├── 📁 tests/                   # 🧪 Testing suite
-│   ├── ⚙️ requirements.txt         # 📦 Dependencies
-│   ├── ⚙️ config.yaml              # 🔧 Configuration
-│   └── 🚀 main_pipeline.py         # 🎯 Pipeline orchestrator
+│   ├── docs/                    # Documentation
+│   ├── tests/                   # Testing suite
+│   ├── requirements.txt         # Dependencies
+│   ├── config.yaml              # Configuration
+│   └── main_pipeline.py         # Pipeline orchestrator
 │
-├── 📄 README.md
-└── 📄 LICENSE
+├── README.md
+└── LICENSE
 🚀 Quick Start Guide
 📋 Prerequisites
-<div align="center">
-Software	Version	Purpose
-https://img.shields.io/badge/Python-3.8%252B-blue	3.8+	Core Programming
-https://img.shields.io/badge/PostgreSQL-12%252B-blue	12+	Database
-https://img.shields.io/badge/Git-2.20%252B-blue	2.20+	Version Control
-</div>
+Python 3.8 or higher
+
+PostgreSQL 12 or higher
+
+Git 2.20 or higher
+
 ⚡ Installation Steps
 1. Clone Repository
 bash
@@ -92,7 +91,12 @@ cd Pipe-Line-DWH-PROJECT-ITI/project1
 bash
 # Create virtual environment
 python -m venv dwh_env
-source dwh_env/bin/activate  # Windows: dwh_env\Scripts\activate
+
+# Activate environment
+# On Windows:
+dwh_env\Scripts\activate
+# On macOS/Linux:
+source dwh_env/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -106,14 +110,8 @@ psql -d dwh_project -f sql/ddl/create_tables.sql
 4. Run Pipeline
 bash
 python main_pipeline.py
-<div align="center">
-https://via.placeholder.com/600x200/FF6B6B/FFFFFF?text=Clone+%E2%86%92+Install+%E2%86%92+Configure+%E2%86%92+Run+%E2%9C%85
-
-</div>
-🔄 ETL Process Deep Dive
-1. 📥 Extraction Phase
-https://via.placeholder.com/400x200/2E86AB/FFFFFF?text=Data+Extraction+%F0%9F%93%A5
-
+🔄 ETL Process
+1. Extraction Phase
 Sources:
 
 CSV/JSON files
@@ -132,9 +130,7 @@ Error handling & retries
 
 Data validation at source
 
-2. 🔄 Transformation Phase
-https://via.placeholder.com/400x200/4ECDC4/FFFFFF?text=Data+Transformation+%F0%9F%94%84
-
+2. Transformation Phase
 Operations:
 
 Data cleaning & standardization
@@ -145,9 +141,7 @@ Business rule application
 
 Data enrichment & aggregation
 
-3. 📤 Loading Phase
-https://via.placeholder.com/400x200/FF6B6B/FFFFFF?text=Data+Loading+%F0%9F%93%A4
-
+3. Loading Phase
 Strategies:
 
 Full refresh vs incremental
@@ -160,17 +154,26 @@ Transaction management
 
 🏗️ Data Modeling
 Star Schema Design
-<div align="center">
-https://via.placeholder.com/600x400/F7DC6F/333333?text=Star+Schema+Architecture+%E2%AD%90
+Fact Tables:
 
-</div>
-Table Type	Purpose	Examples
-Fact Tables	Business metrics & measurements	fact_sales, fact_orders
-Dimension Tables	Descriptive attributes	dim_customer, dim_product
-Bridge Tables	Many-to-many relationships	bridge_product_category
-Junk Dimensions	Miscellaneous attributes	dim_flags
+fact_sales - Sales transactions and metrics
+
+fact_orders - Order processing data
+
+fact_inventory - Stock and inventory metrics
+
+Dimension Tables:
+
+dim_customer - Customer information
+
+dim_product - Product catalog
+
+dim_time - Date and time dimensions
+
+dim_location - Geographic data
+
 📊 Sample Analytics
-📈 Sales Performance Dashboard
+Sales Performance Dashboard
 sql
 -- Monthly Sales Trend
 SELECT 
@@ -180,7 +183,7 @@ SELECT
 FROM fact_sales 
 GROUP BY month 
 ORDER BY month;
-👥 Customer Analysis
+Customer Analysis
 sql
 -- Top Customers by Revenue
 SELECT 
@@ -192,16 +195,41 @@ JOIN dim_customer c ON f.customer_key = c.customer_key
 GROUP BY c.customer_name
 ORDER BY total_spent DESC
 LIMIT 10;
+Product Performance
+sql
+-- Best Selling Products
+SELECT 
+    p.product_name,
+    SUM(f.quantity) as total_units,
+    SUM(f.sales_amount) as total_revenue
+FROM fact_sales f
+JOIN dim_product p ON f.product_key = p.product_key
+GROUP BY p.product_name
+ORDER BY total_revenue DESC
+LIMIT 15;
 🧪 Quality Assurance
-<div align="center">
-Test Type	Tools	Coverage
-Unit Tests	pytest	85%
-Integration Tests	pytest + Docker	90%
-Data Quality	Great Expectations	95%
-Performance	pgBench	80%
-</div>
+Test Types:
+
+Unit Tests - Individual component testing (85% coverage)
+
+Integration Tests - End-to-end pipeline testing (90% coverage)
+
+Data Quality Tests - Data validation and quality checks (95% coverage)
+
+Performance Tests - System performance benchmarking (80% coverage)
+
+Running Tests
+bash
+# Unit tests
+pytest tests/unit_tests/ -v
+
+# Integration tests
+pytest tests/integration_tests/ -v
+
+# Data quality tests
+python -m scripts.validation.data_quality_check
 ⚙️ Configuration
-Edit config.yaml:
+Edit config.yaml for your environment:
 
 yaml
 database:
@@ -220,16 +248,18 @@ paths:
   raw_data: "./data/raw/"
   processed_data: "./data/processed/"
   log_file: "./logs/etl_pipeline.log"
-🚀 Performance Metrics
-<div align="center">
-Metric	Value	Target
-Data Processing Speed	10K records/sec	✅
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+📈 Performance Metrics
+Metric	Value	Status
+Data Processing Speed	10,000 records/second	✅
 Query Response Time	< 2 seconds	✅
 Data Accuracy	99.8%	✅
-System Uptime	99.9%	✅
-</div>
+System Availability	99.9%	✅
 🛠️ Development Guide
-🏗️ Adding New Data Sources
+Adding New Data Sources
 Create extraction script in scripts/extraction/
 
 Define transformation rules in scripts/transformation/
@@ -238,63 +268,107 @@ Update data model in sql/ddl/
 
 Add tests in tests/
 
-🧪 Running Tests
-bash
-# Unit tests
-pytest tests/unit_tests/ -v
+Update documentation in docs/
 
-# Integration tests
-pytest tests/integration_tests/ -v
+Code Structure
+python
+# Example pipeline component
+class DataExtractor:
+    def extract_from_api(self, endpoint, params):
+        # Implementation for API data extraction
+        pass
+    
+    def extract_from_database(self, query, connection):
+        # Implementation for database extraction
+        pass
+    
+    def extract_from_files(self, file_path, format_type):
+        # Implementation for file-based extraction
+        pass
+📋 Project Roadmap
+Completed ✅
+Phase 1: Basic ETL Pipeline
 
-# Data quality tests
-python -m scripts.validation.data_quality_check
-📈 Project Roadmap
-Phase 1: Basic ETL Pipeline ✅
+Phase 2: Data Modeling & Star Schema
 
-Phase 2: Data Modeling & Star Schema ✅
+Phase 3: Data Quality Framework
 
-Phase 3: Data Quality Framework ✅
-
-Phase 4: Real-time Streaming
+In Progress 🔄
+Phase 4: Real-time Streaming Integration
 
 Phase 5: Cloud Deployment (AWS)
 
-Phase 6: Advanced Analytics (ML)
+Planned 📅
+Phase 6: Advanced Analytics & Machine Learning
+
+Phase 7: Multi-region Deployment
+
+Phase 8: Automated Monitoring & Alerting
 
 🤝 Contributing
-We welcome contributions! Please see our Contributing Guide for details.
+We welcome contributions! Please follow these steps:
 
-🍴 Fork the project
+Fork the project
 
-🌿 Create your feature branch (git checkout -b feature/AmazingFeature)
+Create your feature branch (git checkout -b feature/AmazingFeature)
 
-💾 Commit your changes (git commit -m 'Add some AmazingFeature')
+Commit your changes (git commit -m 'Add some AmazingFeature')
 
-📤 Push to the branch (git push origin feature/AmazingFeature)
+Push to the branch (git push origin feature/AmazingFeature)
 
-🔀 Open a Pull Request
+Open a Pull Request
+
+Contribution Guidelines
+Follow PEP 8 coding standards
+
+Write comprehensive tests
+
+Update documentation
+
+Ensure backward compatibility
 
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 👥 Team
-<div align="center">
-Role	Name	Contact
-Project Lead	Mohamed Mahmoud	https://img.shields.io/badge/GitHub-Profile-181717?logo=github
-Data Engineer	Mohamed Mahmoud	https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin
-</div>
+Mohamed Mahmoud - Project Lead & Data Engineer
+
+GitHub: @mohamedmahmoud7415369
+
+LinkedIn: Your Profile
+
+Email: your.email@example.com
+
 🙏 Acknowledgments
-ITI - Data Engineering Program
+ITI - Data Engineering Program for the learning opportunity
 
-Mentors - For guidance and support
+Mentors - For guidance and technical support
 
-Open Source Community - For amazing tools and libraries
+Open Source Community - For providing amazing tools and libraries
 
-<div align="center">
-⭐ If this project helped you, please give it a star!
-https://img.shields.io/github/stars/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI?style=social
-https://img.shields.io/github/forks/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI?style=social
+Contributors - Everyone who helped improve this project
+
+📞 Support
+If you have any questions or need support, please:
+
+Check the documentation
+
+Search existing issues
+
+Create a new issue with detailed information
+
+🔗 Useful Links
+Project Documentation
+
+API Reference
+
+Data Dictionary
+
+Setup Guide
+
+Troubleshooting
+
+⭐ Support the Project
+If this project helped you, please give it a star! It helps others discover the project and motivates further development.
 
 Built with ❤️ for the data community
-
-</div> ```
