@@ -41,14 +41,10 @@ This project implements a **production-ready Data Warehouse ETL Pipeline** that 
 
 **Data Sources:**
 - CSV Files
-- APIs
 - Databases  
-- Real-time Streams
 
 **Outputs:**
-- Business Dashboards
 - Ad-hoc Queries
-- ML Models
 - Reports
 
 ### 🗃️ Database Schema Design
