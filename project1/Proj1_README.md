@@ -1,15 +1,6 @@
 # 🏗️ Data Warehouse Pipeline Project
 
-<div align="center">
-
 ![DWH Pipeline](https://via.placeholder.com/1200x400/2E86AB/FFFFFF?text=Data+Warehouse+ETL+Pipeline+🚀)
-![ETL Process](https://via.placeholder.com/800x200/4ECDC4/FFFFFF?text=Extract+→+Transform+→+Load+→+Analyze)
-
-</div>
-
-<div align="center">
-
-### 🚀 **Enterprise-Grade ETL Pipeline for Business Intelligence**
 
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-brightgreen?logo=python&logoColor=white)](https://python.org)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-12%2B-blue?logo=postgresql&logoColor=white)](https://postgresql.org)
@@ -18,9 +9,9 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI?style=social)](https://github.com/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI)
 
-**✨ Transform Raw Data into Actionable Business Insights ✨**
+## 🚀 Enterprise-Grade ETL Pipeline for Business Intelligence
 
-</div>
+Transform raw data into actionable business insights with this production-ready Data Warehouse ETL Pipeline.
 
 ## 📋 Table of Contents
 
@@ -35,95 +26,73 @@
 
 ## 🎯 Project Overview
 
-<div align="center">
+This project implements a **production-ready Data Warehouse ETL Pipeline** that transforms disparate raw data sources into structured, analyzable information. Built as part of the **ITI Data Engineering Program**, it showcases enterprise-level data processing capabilities.
 
-| 🎯 Goal | 💡 Solution | 📈 Impact |
-|---------|-------------|-----------|
+| Goal | Solution | Impact |
+|------|----------|--------|
 | **Centralized Data Management** | **Unified ETL Pipeline** | **Single Source of Truth** |
 | **Business Intelligence** | **Star Schema Models** | **Actionable Insights** |
 | **Data Quality** | **Automated Validation** | **Trusted Analytics** |
-
-</div>
-
-This project implements a **production-ready Data Warehouse ETL Pipeline** that transforms disparate raw data sources into structured, analyzable information. Built as part of the **ITI Data Engineering Program**, it showcases enterprise-level data processing capabilities.
 
 ## 🏗️ Architecture
 
 ### 🔄 End-to-End Data Flow
 
-```mermaid
-graph LR
-    A[📥 Raw Data Sources] --> B[🔍 Extraction]
-    B --> C[🔄 Transformation]
-    C --> D[📤 Loading]
-    D --> E[🏗️ Data Models]
-    E --> F[📊 Analytics]
-    
-    A1[CSV Files] --> B
-    A2[APIs] --> B
-    A3[Databases] --> B
-    A4[Streams] --> B
-    
-    F --> F1[📈 Dashboards]
-    F --> F2[🔍 Ad-hoc Queries]
-    F --> F3[🤖 ML Models]
 ```
+Raw Data Sources → Extraction → Transformation → Loading → Data Models → Analytics
+```
+
+**Data Sources:**
+- CSV Files
+- APIs
+- Databases  
+- Real-time Streams
+
+**Outputs:**
+- Business Dashboards
+- Ad-hoc Queries
+- ML Models
+- Reports
 
 ### 🗃️ Database Schema Design
 
-<div align="center">
-
 **⭐ Star Schema Architecture**
 
-| Table Type | 🎯 Purpose | 📝 Examples |
-|------------|-------------|-------------|
+| Table Type | Purpose | Examples |
+|------------|---------|----------|
 | **Fact Tables** | Business metrics & measurements | `fact_sales`, `fact_orders` |
 | **Dimension Tables** | Descriptive attributes | `dim_customer`, `dim_product` |
 | **Bridge Tables** | Many-to-many relationships | `bridge_product_category` |
 
-</div>
-
 ## 🛠️ Tech Stack
 
-<div align="center">
-
-### 🎨 Technology Landscape
-
-| Layer | Technology | Badge |
-|-------|------------|-------|
-| **Extraction** | Python, Requests | ![Python](https://img.shields.io/badge/Python-Extraction-3776AB) |
-| **Transformation** | Pandas, NumPy | ![Pandas](https://img.shields.io/badge/Pandas-Transformation-150458) |
-| **Storage** | PostgreSQL | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Storage-336791) |
-| **Orchestration** | Apache Airflow | ![Airflow](https://img.shields.io/badge/Airflow-Orchestration-017CEE) |
-| **Visualization** | Tableau, Power BI | ![Tableau](https://img.shields.io/badge/Tableau-Visualization-E97627) |
-
-</div>
+| Layer | Technology | Purpose |
+|-------|------------|---------|
+| **Extraction** | Python, Requests | Data Collection |
+| **Transformation** | Pandas, NumPy | Data Processing |
+| **Storage** | PostgreSQL | Data Warehouse |
+| **Orchestration** | Apache Airflow | Pipeline Management |
+| **Visualization** | Tableau, Power BI | Business Intelligence |
 
 ## 📊 Features
-
-<div align="center">
 
 ### 🎁 Core Capabilities
 
 | Feature | Status | Description |
 |---------|--------|-------------|
-| 🔄 **Automated ETL** | ✅ **Production Ready** | End-to-end pipeline automation |
-| 🗄️ **Star Schema** | ✅ **Implemented** | Optimized data models |
-| 📊 **Data Quality** | ✅ **Comprehensive** | Validation & monitoring |
-| 🚀 **High Performance** | ✅ **Optimized** | 10K+ records/second |
-| 🔒 **Error Handling** | ✅ **Robust** | Retry mechanisms & logging |
-
-</div>
+| **Automated ETL** | ✅ Production Ready | End-to-end pipeline automation |
+| **Star Schema** | ✅ Implemented | Optimized data models |
+| **Data Quality** | ✅ Comprehensive | Validation & monitoring |
+| **High Performance** | ✅ Optimized | 10K+ records/second |
+| **Error Handling** | ✅ Robust | Retry mechanisms & logging |
 
 ### 🎯 Advanced Features
 
-<details>
-<summary>🔄 <b>Smart ETL Processing</b></summary>
-
-- **Incremental Loading**: Only process changed data
-- **Parallel Processing**: Multi-threaded operations
-- **Data Validation**: Automated quality checks
-- **Error Recovery**: Resume from failure points
+**🔄 Smart ETL Processing**
+- Incremental Loading: Only process changed data
+- Parallel Processing: Multi-threaded operations  
+- Data Validation: Automated quality checks
+- Error Recovery: Resume from failure points
 
 ```python
 # Example: Smart incremental loading
@@ -134,15 +103,11 @@ class SmartETL:
         self.load_incremental(transformed)
 ```
 
-</details>
-
-<details>
-<summary>📈 <b>Real-time Analytics</b></summary>
-
-- **Live Dashboards**: Real-time business metrics
-- **Predictive Analytics**: ML-powered insights
-- **Custom Reports**: Ad-hoc query capabilities
-- **Data Export**: Multiple format support
+**📈 Real-time Analytics**
+- Live Dashboards: Real-time business metrics
+- Predictive Analytics: ML-powered insights
+- Custom Reports: Ad-hoc query capabilities
+- Data Export: Multiple format support
 
 ```sql
 -- Real-time sales dashboard query
@@ -156,21 +121,13 @@ WHERE sale_date >= CURRENT_DATE - INTERVAL '1 hour'
 GROUP BY region, product_category;
 ```
 
-</details>
-
 ## 🔧 Installation
 
-### 🚀 Quick Deploy
-
-<div align="center">
-
-**🎯 One-Click Setup Options**
+### 🚀 Quick Deploy Options
 
 [![Deploy with Docker](https://img.shields.io/badge/Deploy-Docker-2496ED?logo=docker&logoColor=white)](deploy/docker)
 [![Deploy on AWS](https://img.shields.io/badge/Deploy-AWS-FF9900?logo=amazonaws&logoColor=white)](deploy/aws)
 [![Local Setup](https://img.shields.io/badge/Setup-Local-4CAF50?logo=terminal&logoColor=white)](#local-setup)
-
-</div>
 
 ### 💻 Local Setup
 
@@ -207,11 +164,8 @@ python main_pipeline.py
 
 ### ⚙️ Configuration
 
-<details>
-<summary>🔧 <b>View Configuration Options</b></summary>
-
+**Configuration File: config.yaml**
 ```yaml
-# config.yaml
 database:
   host: "localhost"
   port: 5432
@@ -234,25 +188,17 @@ monitoring:
   alert_email: "admin@company.com"
 ```
 
-</details>
-
 ## 📈 Demo & Examples
 
 ### 🎯 Live Dashboard Preview
 
-<div align="center">
-
 ![Dashboard Preview](https://via.placeholder.com/800x400/2E86AB/FFFFFF?text=Live+Business+Intelligence+Dashboard)
 
-**📊 Real-time Business Metrics**
-
-</div>
+**Real-time Business Metrics**
 
 ### 💡 Sample Use Cases
 
-<details>
-<summary>🛒 <b>E-commerce Analytics</b></summary>
-
+**🛒 E-commerce Analytics**
 ```sql
 -- Customer Lifetime Value Analysis
 SELECT 
@@ -267,11 +213,7 @@ GROUP BY c.customer_id, c.customer_name
 ORDER BY lifetime_value DESC;
 ```
 
-</details>
-
-<details>
-<summary>📊 <b>Sales Performance</b></summary>
-
+**📊 Sales Performance**
 ```sql
 -- Regional Sales Performance
 SELECT 
@@ -287,60 +229,41 @@ GROUP BY l.region, l.country, year, month
 ORDER BY year DESC, month DESC, monthly_revenue DESC;
 ```
 
-</details>
-
 ## 🎯 Performance Metrics
-
-<div align="center">
 
 ### ⚡ System Performance
 
-| Metric | 🎯 Target | ✅ Actual | 📊 Status |
-|--------|-----------|-----------|-----------|
-| **Processing Speed** | 5K records/sec | **10K records/sec** | 🟢 **Exceeded** |
-| **Query Response** | < 3 seconds | **< 2 seconds** | 🟢 **Excellent** |
-| **Data Accuracy** | 99% | **99.8%** | 🟢 **Outstanding** |
-| **Uptime** | 99.5% | **99.9%** | 🟢 **Perfect** |
-
-</div>
+| Metric | Target | Actual | Status |
+|--------|--------|--------|--------|
+| **Processing Speed** | 5K records/sec | **10K records/sec** | ✅ Exceeded |
+| **Query Response** | < 3 seconds | **< 2 seconds** | ✅ Excellent |
+| **Data Accuracy** | 99% | **99.8%** | ✅ Outstanding |
+| **Uptime** | 99.5% | **99.9%** | ✅ Perfect |
 
 ## 🔄 Development Workflow
 
 ### 🛠️ Adding New Features
 
-<div align="center">
-
-```mermaid
-graph TB
-    A[💡 Feature Idea] --> B[🔄 Create Branch]
-    B --> C[👨‍💻 Develop Feature]
-    C --> D[🧪 Run Tests]
-    D --> E[📝 Update Docs]
-    E --> F[🔀 Create PR]
-    F --> G[✅ Code Review]
-    G --> H[🚀 Merge & Deploy]
 ```
-
-</div>
+Feature Idea → Create Branch → Develop Feature → Run Tests → Update Docs → Create PR → Code Review → Merge & Deploy
+```
 
 ### 🧪 Testing Strategy
 
 ```bash
-# 🟢 Run complete test suite
+# Run complete test suite
 pytest tests/ -v --cov=scripts --cov-report=html
 
-# 🔵 Run specific test categories
+# Run specific test categories
 pytest tests/unit_tests/ -v           # Unit tests
 pytest tests/integration_tests/ -v    # Integration tests
 pytest tests/performance_tests/ -v    # Performance tests
 
-# 🟡 Data quality validation
+# Data quality validation
 python -m scripts.validation.data_quality_check --full-scan
 ```
 
 ## 🤝 Contributing
-
-<div align="center">
 
 ### 🎉 Join Our Community!
 
@@ -348,51 +271,43 @@ python -m scripts.validation.data_quality_check --full-scan
 [![Open Issues](https://img.shields.io/github/issues/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI)](../../issues)
 [![Good First Issues](https://img.shields.io/github/issues/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI/good%20first%20issue)](../../issues?q=is%3Aissue+is%3Aopen+label%3A"good+first+issue")
 
-</div>
-
 We love contributions! Here's how you can help:
 
 ### 🐛 Report Bugs
-1. Search [existing issues](../../issues)
-2. Create [new issue](../../issues/new) with detailed information
+1. Search existing issues
+2. Create new issue with detailed information
 
 ### 🚀 Suggest Features
-1. Check [feature requests](../../issues?q=is%3Aissue+label%3Aenhancement)
+1. Check feature requests
 2. Submit your idea with use cases
 
 ### 💻 Code Contributions
-1. 🍴 Fork the repository
-2. 🌿 Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. 💾 Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. 📤 Push to branch (`git push origin feature/AmazingFeature`)
-5. 🔀 Open Pull Request
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open Pull Request
 
 ## 📞 Contact & Support
-
-<div align="center">
 
 ### 👨‍💻 Project Maintainer
 
 **Mohamed Mahmoud**  
 *Data Engineer & Project Lead*
 
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?logo=github&style=for-the-badge)](https://github.com/mohamedmahmoud7415369)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin&style=for-the-badge)](https://linkedin.com/in/yourprofile)
-[![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail&style=for-the-badge)](mailto:your.email@example.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-View-4CAF50?logo=google-chrome&style=for-the-badge)](https://yourportfolio.com)
-
-</div>
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?logo=github)](https://github.com/mohamedmahmoud7415369)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://linkedin.com/in/yourprofile)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail)](mailto:your.email@example.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-View-4CAF50?logo=google-chrome)](https://yourportfolio.com)
 
 ### 🆘 Need Help?
 
-- 📚 **Documentation**: Check our [detailed docs](docs/)
-- 🐛 **Bug Reports**: [Create issue](../../issues/new)
-- 💬 **Discussions**: [Join conversation](../../discussions)
-- 📧 **Email**: Direct support at your.email@example.com
+- **Documentation**: Check our detailed docs
+- **Bug Reports**: Create issue
+- **Discussions**: Join conversation  
+- **Email**: Direct support at your.email@example.com
 
 ## 🙏 Acknowledgments
-
-<div align="center">
 
 ### 🏆 Supported By
 
@@ -402,11 +317,7 @@ We love contributions! Here's how you can help:
 
 **Special thanks to mentors, instructors, and the open-source community!**
 
-</div>
-
 ---
-
-<div align="center">
 
 ## ⭐ Support This Project
 
@@ -416,34 +327,23 @@ If this project helped you, please give it a star!
 [![GitHub forks](https://img.shields.io/github/forks/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI?style=social)](https://github.com/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI?color=blue)](https://github.com/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI/issues)
 
-### 🚀 **Transform Your Data into Insights Today!**
+### 🚀 Transform Your Data into Insights Today!
 
 **Built with ❤️ for the Data Community**
 
 *Last updated: March 2024 | Version: 2.0*
 
-</div>
-
 ---
 
 ## 🔗 Quick Links
 
-- [📚 Full Documentation](docs/)
-- [🚀 Getting Started Guide](docs/GETTING_STARTED.md)
-- [🐛 Bug Tracker](../../issues)
-- [💡 Feature Requests](../../issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
-- [📊 Live Demo](https://demo-your-project.com)
-- [🎥 Video Tutorials](docs/TUTORIALS.md)
+- [Full Documentation](docs/)
+- [Getting Started Guide](docs/GETTING_STARTED.md)
+- [Bug Tracker](../../issues)
+- [Feature Requests](../../issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
+- [Live Demo](https://demo-your-project.com)
+- [Video Tutorials](docs/TUTORIALS.md)
 
-This interactive README features:
-- ✅ **Visual flowcharts** with Mermaid diagrams
-- ✅ **Interactive collapsible sections** for detailed content
-- ✅ **Color-coded badges** and status indicators
-- ✅ **Live performance metrics** with visual status
-- ✅ **Quick navigation** with table of contents
-- ✅ **Multiple deployment options** with badges
-- ✅ **Community engagement** elements
-- ✅ **Professional contact section** with social badges
-- ✅ **Mobile-responsive** design that works everywhere
+---
 
-Copy and paste this entire content into your `README.md` file for an engaging, professional presentation!
+**Copy this entire content and paste it into your README.md file!**
