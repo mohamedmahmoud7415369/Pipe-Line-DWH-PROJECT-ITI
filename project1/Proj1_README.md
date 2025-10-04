@@ -1,6 +1,3 @@
-Here's the plain text version to copy and paste into your README.md file:
-
-```markdown
 # Data Warehouse Pipeline Project
 
 ![DWH Banner](https://via.placeholder.com/1200x400/2E86AB/FFFFFF?text=Data+Warehouse+ETL+Pipeline)
