@@ -1,6 +1,6 @@
 # Data Warehouse Pipeline Project
 
-![DWH Banner](https://via.placeholder.com/1200x400/2E86AB/FFFFFF?text=Data+Warehouse+ETL+Pipeline)
+![DWH Banner](https://via.placeholder.com/1200x400/2E86AB/FFFFFF?text=Data+Warehouse+ETL+Pipeline+%F0%9F%9A%80)
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)](https://python.org)
 [![SQL](https://img.shields.io/badge/SQL-PostgreSQL-336791?logo=postgresql&logoColor=white)](https://postgresql.org)
@@ -24,9 +24,8 @@ This project implements a complete **Data Warehouse ETL Pipeline** that transfor
 
 ## System Architecture
 
-```
-Raw Data Sources → Data Extraction → Data Transformation → Data Loading → Data Models → Analytics & BI
-```
+<img width="2487" height="2290" alt="deepseek_mermaid_20251004_ba9a14" src="https://github.com/user-attachments/assets/03238ce6-fd38-439c-9e83-7a61ed36ce7b" />
+
 
 **Components:**
 - **Data Extraction**: Python Scripts, APIs, Database connections
