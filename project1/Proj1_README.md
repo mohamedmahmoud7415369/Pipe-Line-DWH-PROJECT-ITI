@@ -1,52 +1,56 @@
-🏗️ Data Warehouse Pipeline Project
-https://via.placeholder.com/1200x400/2E86AB/FFFFFF?text=Data+Warehouse+ETL+Pipeline
+Here's the plain text version to copy and paste into your README.md file:
 
-https://img.shields.io/badge/Python-3.8%252B-3776AB?logo=python&logoColor=white
-https://img.shields.io/badge/SQL-PostgreSQL-336791?logo=postgresql&logoColor=white
-https://img.shields.io/badge/ETL-Pipeline-FF6B6B?logo=apacheairflow&logoColor=white
-https://img.shields.io/badge/Data-Warehouse-4ECDC4?logo=amazonaws&logoColor=white
-https://img.shields.io/badge/License-MIT-green.svg
+```markdown
+# Data Warehouse Pipeline Project
 
-End-to-End ETL Pipeline for Business Intelligence & Analytics
+![DWH Banner](https://via.placeholder.com/1200x400/2E86AB/FFFFFF?text=Data+Warehouse+ETL+Pipeline)
 
-📊 Project Overview
-This project implements a complete Data Warehouse ETL Pipeline that transforms raw data into structured, analyzable information for business intelligence. Built as part of the ITI Data Engineering program, it demonstrates industry-standard practices in data warehousing and ETL processes.
+[![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)](https://python.org)
+[![SQL](https://img.shields.io/badge/SQL-PostgreSQL-336791?logo=postgresql&logoColor=white)](https://postgresql.org)
+[![ETL](https://img.shields.io/badge/ETL-Pipeline-FF6B6B?logo=apacheairflow&logoColor=white)](https://airflow.apache.org)
+[![Data Warehouse](https://img.shields.io/badge/Data-Warehouse-4ECDC4?logo=amazonaws&logoColor=white)](https://aws.amazon.com)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-🎯 Key Features
-🔄 ETL Automation - Automated data extraction, transformation, and loading
+**End-to-End ETL Pipeline for Business Intelligence & Analytics**
 
-🗄️ Star Schema - Optimized data models for analytics
+## Project Overview
 
-📊 Data Quality - Comprehensive validation and quality checks
+This project implements a complete **Data Warehouse ETL Pipeline** that transforms raw data into structured, analyzable information for business intelligence. Built as part of the ITI Data Engineering program, it demonstrates industry-standard practices in data warehousing and ETL processes.
 
-🚀 Scalable Design - Handles large datasets efficiently
+## Key Features
 
-📈 Business Insights - Ready-to-use analytical queries
+- **ETL Automation** - Automated data extraction, transformation, and loading
+- **Star Schema** - Optimized data models for analytics
+- **Data Quality** - Comprehensive validation and quality checks
+- **Scalable Design** - Handles large datasets efficiently
+- **Business Insights** - Ready-to-use analytical queries
 
-🏗️ System Architecture
-text
+## System Architecture
+
+```
 Raw Data Sources → Data Extraction → Data Transformation → Data Loading → Data Models → Analytics & BI
-Components:
+```
 
-Data Extraction: Python Scripts, APIs, Database connections
+**Components:**
+- **Data Extraction**: Python Scripts, APIs, Database connections
+- **Data Transformation**: Pandas, NumPy, Business logic
+- **Data Loading**: PostgreSQL, Bulk operations
+- **Data Models**: Star Schema, Fact & Dimension tables
+- **Analytics**: Tableau, Power BI, SQL queries
 
-Data Transformation: Pandas, NumPy, Business logic
+## Technology Stack
 
-Data Loading: PostgreSQL, Bulk operations
+| Component | Technology | Purpose |
+|-----------|------------|---------|
+| **Extraction** | Python, Requests | Data Collection |
+| **Transformation** | Pandas, NumPy | Data Processing |
+| **Storage** | PostgreSQL | Data Warehouse |
+| **Orchestration** | Apache Airflow | Pipeline Management |
+| **Visualization** | Tableau, Power BI | Business Intelligence |
 
-Data Models: Star Schema, Fact & Dimension tables
+## Project Structure
 
-Analytics: Tableau, Power BI, SQL queries
-
-🛠️ Technology Stack
-Component	Technology	Purpose
-Extraction	Python, Requests	Data Collection
-Transformation	Pandas, NumPy	Data Processing
-Storage	PostgreSQL	Data Warehouse
-Orchestration	Apache Airflow	Pipeline Management
-Visualization	Tableau, Power BI	Business Intelligence
-📁 Project Structure
-text
+```
 Pipe-Line-DWH-PROJECT-ITI/
 │
 ├── project1/
@@ -74,21 +78,26 @@ Pipe-Line-DWH-PROJECT-ITI/
 │
 ├── README.md
 └── LICENSE
-🚀 Quick Start Guide
-📋 Prerequisites
-Python 3.8 or higher
+```
 
-PostgreSQL 12 or higher
+## Quick Start Guide
 
-Git 2.20 or higher
+### Prerequisites
 
-⚡ Installation Steps
-1. Clone Repository
-bash
+- **Python** 3.8 or higher
+- **PostgreSQL** 12 or higher
+- **Git** 2.20 or higher
+
+### Installation Steps
+
+#### 1. Clone Repository
+```bash
 git clone https://github.com/mohamedmahmoud7415369/Pipe-Line-DWH-PROJECT-ITI.git
 cd Pipe-Line-DWH-PROJECT-ITI/project1
-2. Set Up Environment
-bash
+```
+
+#### 2. Set Up Environment
+```bash
 # Create virtual environment
 python -m venv dwh_env
 
@@ -100,81 +109,69 @@ source dwh_env/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-3. Database Configuration
-bash
+```
+
+#### 3. Database Configuration
+```bash
 # Create database
 createdb dwh_project
 
 # Initialize schema
 psql -d dwh_project -f sql/ddl/create_tables.sql
-4. Run Pipeline
-bash
+```
+
+#### 4. Run Pipeline
+```bash
 python main_pipeline.py
-🔄 ETL Process
-1. Extraction Phase
-Sources:
+```
 
-CSV/JSON files
+## ETL Process
 
-Database connections
+### 1. Extraction Phase
+**Sources:**
+- CSV/JSON files
+- Database connections
+- API endpoints
+- Real-time streams
 
-API endpoints
+**Features:**
+- Incremental data loading
+- Error handling & retries
+- Data validation at source
 
-Real-time streams
+### 2. Transformation Phase
+**Operations:**
+- Data cleaning & standardization
+- Type conversions & formatting
+- Business rule application
+- Data enrichment & aggregation
 
-Features:
+### 3. Loading Phase
+**Strategies:**
+- Full refresh vs incremental
+- Slowly Changing Dimensions (SCD)
+- Bulk loading optimization
+- Transaction management
 
-Incremental data loading
+## Data Modeling
 
-Error handling & retries
+### Star Schema Design
 
-Data validation at source
+**Fact Tables:**
+- `fact_sales` - Sales transactions and metrics
+- `fact_orders` - Order processing data
+- `fact_inventory` - Stock and inventory metrics
 
-2. Transformation Phase
-Operations:
+**Dimension Tables:**
+- `dim_customer` - Customer information
+- `dim_product` - Product catalog
+- `dim_time` - Date and time dimensions
+- `dim_location` - Geographic data
 
-Data cleaning & standardization
+## Sample Analytics
 
-Type conversions & formatting
-
-Business rule application
-
-Data enrichment & aggregation
-
-3. Loading Phase
-Strategies:
-
-Full refresh vs incremental
-
-Slowly Changing Dimensions (SCD)
-
-Bulk loading optimization
-
-Transaction management
-
-🏗️ Data Modeling
-Star Schema Design
-Fact Tables:
-
-fact_sales - Sales transactions and metrics
-
-fact_orders - Order processing data
-
-fact_inventory - Stock and inventory metrics
-
-Dimension Tables:
-
-dim_customer - Customer information
-
-dim_product - Product catalog
-
-dim_time - Date and time dimensions
-
-dim_location - Geographic data
-
-📊 Sample Analytics
-Sales Performance Dashboard
-sql
+### Sales Performance Dashboard
+```sql
 -- Monthly Sales Trend
 SELECT 
     TO_CHAR(order_date, 'YYYY-MM') as month,
@@ -183,8 +180,10 @@ SELECT
 FROM fact_sales 
 GROUP BY month 
 ORDER BY month;
-Customer Analysis
-sql
+```
+
+### Customer Analysis
+```sql
 -- Top Customers by Revenue
 SELECT 
     c.customer_name,
@@ -195,8 +194,10 @@ JOIN dim_customer c ON f.customer_key = c.customer_key
 GROUP BY c.customer_name
 ORDER BY total_spent DESC
 LIMIT 10;
-Product Performance
-sql
+```
+
+### Product Performance
+```sql
 -- Best Selling Products
 SELECT 
     p.product_name,
@@ -207,19 +208,18 @@ JOIN dim_product p ON f.product_key = p.product_key
 GROUP BY p.product_name
 ORDER BY total_revenue DESC
 LIMIT 15;
-🧪 Quality Assurance
-Test Types:
+```
 
-Unit Tests - Individual component testing (85% coverage)
+## Quality Assurance
 
-Integration Tests - End-to-end pipeline testing (90% coverage)
+**Test Types:**
+- **Unit Tests** - Individual component testing
+- **Integration Tests** - End-to-end pipeline testing
+- **Data Quality Tests** - Data validation and quality checks
+- **Performance Tests** - System performance benchmarking
 
-Data Quality Tests - Data validation and quality checks (95% coverage)
-
-Performance Tests - System performance benchmarking (80% coverage)
-
-Running Tests
-bash
+### Running Tests
+```bash
 # Unit tests
 pytest tests/unit_tests/ -v
 
@@ -228,10 +228,13 @@ pytest tests/integration_tests/ -v
 
 # Data quality tests
 python -m scripts.validation.data_quality_check
-⚙️ Configuration
-Edit config.yaml for your environment:
+```
 
-yaml
+## Configuration
+
+Edit `config.yaml` for your environment:
+
+```yaml
 database:
   host: "localhost"
   port: 5432
@@ -252,26 +255,29 @@ paths:
 logging:
   level: "INFO"
   format: "%(asctime)s - %(levelname)s - %(message)s"
-📈 Performance Metrics
-Metric	Value	Status
-Data Processing Speed	10,000 records/second	✅
-Query Response Time	< 2 seconds	✅
-Data Accuracy	99.8%	✅
-System Availability	99.9%	✅
-🛠️ Development Guide
-Adding New Data Sources
-Create extraction script in scripts/extraction/
+```
 
-Define transformation rules in scripts/transformation/
+## Performance Metrics
 
-Update data model in sql/ddl/
+| Metric | Value | Status |
+|--------|-------|--------|
+| Data Processing Speed | 10,000 records/second | ✅ |
+| Query Response Time | < 2 seconds | ✅ |
+| Data Accuracy | 99.8% | ✅ |
+| System Availability | 99.9% | ✅ |
 
-Add tests in tests/
+## Development Guide
 
-Update documentation in docs/
+### Adding New Data Sources
 
-Code Structure
-python
+1. **Create extraction script** in `scripts/extraction/`
+2. **Define transformation rules** in `scripts/transformation/`
+3. **Update data model** in `sql/ddl/`
+4. **Add tests** in `tests/`
+5. **Update documentation** in `docs/`
+
+### Code Structure
+```python
 # Example pipeline component
 class DataExtractor:
     def extract_from_api(self, endpoint, params):
@@ -285,90 +291,92 @@ class DataExtractor:
     def extract_from_files(self, file_path, format_type):
         # Implementation for file-based extraction
         pass
-📋 Project Roadmap
-Completed ✅
-Phase 1: Basic ETL Pipeline
+```
 
-Phase 2: Data Modeling & Star Schema
+## Project Roadmap
 
-Phase 3: Data Quality Framework
+### Completed ✅
+- **Phase 1**: Basic ETL Pipeline
+- **Phase 2**: Data Modeling & Star Schema
+- **Phase 3**: Data Quality Framework
 
-In Progress 🔄
-Phase 4: Real-time Streaming Integration
+### In Progress 🔄
+- **Phase 4**: Real-time Streaming Integration
+- **Phase 5**: Cloud Deployment (AWS)
 
-Phase 5: Cloud Deployment (AWS)
+### Planned 📅
+- **Phase 6**: Advanced Analytics & Machine Learning
+- **Phase 7**: Multi-region Deployment
+- **Phase 8**: Automated Monitoring & Alerting
 
-Planned 📅
-Phase 6: Advanced Analytics & Machine Learning
+## Contributing
 
-Phase 7: Multi-region Deployment
-
-Phase 8: Automated Monitoring & Alerting
-
-🤝 Contributing
 We welcome contributions! Please follow these steps:
 
-Fork the project
+1. **Fork** the project
+2. **Create** your feature branch (`git checkout -b feature/AmazingFeature`)
+3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+5. **Open** a Pull Request
 
-Create your feature branch (git checkout -b feature/AmazingFeature)
+### Contribution Guidelines
+- Follow PEP 8 coding standards
+- Write comprehensive tests
+- Update documentation
+- Ensure backward compatibility
 
-Commit your changes (git commit -m 'Add some AmazingFeature')
+## License
 
-Push to the branch (git push origin feature/AmazingFeature)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Open a Pull Request
+## Team
 
-Contribution Guidelines
-Follow PEP 8 coding standards
+**Mohamed Mahmoud** - Project Lead & Data Engineer
+- GitHub: [@mohamedmahmoud7415369](https://github.com/mohamedmahmoud7415369)
+- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
+- Email: your.email@example.com
 
-Write comprehensive tests
+## Acknowledgments
 
-Update documentation
+- **ITI** - Data Engineering Program for the learning opportunity
+- **Mentors** - For guidance and technical support
+- **Open Source Community** - For providing amazing tools and libraries
+- **Contributors** - Everyone who helped improve this project
 
-Ensure backward compatibility
+## Support
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-👥 Team
-Mohamed Mahmoud - Project Lead & Data Engineer
-
-GitHub: @mohamedmahmoud7415369
-
-LinkedIn: Your Profile
-
-Email: your.email@example.com
-
-🙏 Acknowledgments
-ITI - Data Engineering Program for the learning opportunity
-
-Mentors - For guidance and technical support
-
-Open Source Community - For providing amazing tools and libraries
-
-Contributors - Everyone who helped improve this project
-
-📞 Support
 If you have any questions or need support, please:
 
-Check the documentation
+1. Check the [documentation](docs/)
+2. Search existing [issues](../../issues)
+3. Create a new [issue](../../issues/new) with detailed information
 
-Search existing issues
+## Useful Links
 
-Create a new issue with detailed information
+- [Project Documentation](docs/)
+- [API Reference](docs/api.md)
+- [Data Dictionary](docs/data_dictionary.md)
+- [Setup Guide](docs/setup_guide.md)
+- [Troubleshooting](docs/troubleshooting.md)
 
-🔗 Useful Links
-Project Documentation
+---
 
-API Reference
+## Support the Project
 
-Data Dictionary
-
-Setup Guide
-
-Troubleshooting
-
-⭐ Support the Project
 If this project helped you, please give it a star! It helps others discover the project and motivates further development.
 
-Built with ❤️ for the data community
+**Built with ❤️ for the data community**
+
+---
+
+*Last updated: March 2024*
+```
+
+This plain text version is:
+- ✅ **Left-aligned** as requested
+- ✅ **Error-free** with proper markdown syntax
+- ✅ **Visual** with badges and structure
+- ✅ **Comprehensive** covering all aspects
+- ✅ **Ready to use** - just copy and paste into README.md
+
+You can copy this entire text and paste it directly into your `README.md` file in the repository!
