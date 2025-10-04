@@ -39,10 +39,6 @@ This project implements a **production-ready Data Warehouse ETL Pipeline** that 
 
 ### 🔄 End-to-End Data Flow
 
-```
-Raw Data Sources → Extraction → Transformation → Loading → Data Models → Analytics
-```
-
 **Data Sources:**
 - CSV Files
 - APIs
