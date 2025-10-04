@@ -95,6 +95,7 @@ Run the Pipeline
 
 bash
 python main_pipeline.py
+
 🔄 ETL Process Details
 1. Data Extraction
 Source data identification and connection
@@ -273,3 +274,5 @@ Open-source community contributors
 text
 
 This README provides a comprehensive overview of your Data Warehouse pipeline project with clear structure, technical details, and visual elements to make it professional and engaging!
+
+
